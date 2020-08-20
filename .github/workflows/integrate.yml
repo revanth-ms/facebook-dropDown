@@ -1,8 +1,8 @@
 name: node Continous Integration
 
 on:
-  pull_pullrequest:
-    branches: [ master ]
+  pull_request:
+    branches: [master]
 
 jobs:
   test_pull_request:
@@ -10,8 +10,7 @@ jobs:
     steps:
       - uses: actions/checout@v2
       - uses: actions/setup-node@v1
-        with: 
+        with:
           node_version: 12
       - run: npm ci
       - run: npm run build
-      
