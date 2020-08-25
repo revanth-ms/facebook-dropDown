@@ -21,6 +21,7 @@ code {
   --border-radius: 8px;
   --speed: 500ms;
   --acc: 670ms;
+  --vel: 50px
 }
 
 ul {
